@@ -8,4 +8,9 @@ form.addEventListener("submit", function(event) {
  li.textContent = `${nome} - ${email}`;
  lista.appendChild(li);
  form.reset();
+ if (!email.includes("@")) {
+ alert("Email inválido!");
+ return;
+ }
+
 })
